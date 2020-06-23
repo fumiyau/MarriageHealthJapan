@@ -4,7 +4,6 @@
 # Marriage and Health in Japan
 # Fumiya Uchikoshi, uchikoshi@princeton.edu
 #===============================================================================
-
 library(estatapi)
 #https://cran.r-project.org/web/packages/estatapi/README.html
 library(tidyverse)
@@ -23,10 +22,11 @@ library(gdata)
 #library(viridis)
 
 ######################################################################
-# Change Working Directory
+# Change Working Directory / Set parameter
 ######################################################################
-setwd("/Users/fumiyau/Dropbox (Princeton)/10.MarriageHealthJapan/") 
-
+rm(list = ls())
+setwd("/Users/fumiyau/Dropbox (Princeton)/10.MarriageHealthJapan/1.Git/MarriageHealthJapan") 
+source("appid.R")
 ######################################################################
 # Read data: Census mid year population
 ######################################################################
